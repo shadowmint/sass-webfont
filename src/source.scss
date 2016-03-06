@@ -1,0 +1,5 @@
+/// This function does a thing.
+/// @param $value This value for a thing.
+@function SourceAction($value) {
+  @return "--#{$value}--";
+}
