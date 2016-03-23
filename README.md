@@ -16,6 +16,11 @@ This is a reusable webfont scss package.
       }
     }
 
+If you attempt to use a webfont that is not defined, you'll see an error like:
+
+    WARNING: Invalid attempt to use missing font 'dfault'
+             on line 46 of node_modules/sass-webfont/src/webfont.scss
+
 ## Install
 
     npm init
