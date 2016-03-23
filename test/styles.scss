@@ -1,7 +1,11 @@
-@import "node_modules/sass-TEMPLATE/_manifest.scss";
+@import "node_modules/sass-webfont/_manifest.scss";
 
-#foo {
-  &:after {
-    content: SourceAction("Value");
+// Define font
+@include WebFontDefine("default", "NovaSlim", "fonts/NovaSlim.tff");
+
+// Use font
+html {
+  body {
+    font-family: WebFont("default");
   }
 }

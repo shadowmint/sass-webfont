@@ -20,11 +20,11 @@ $__webfontState: (
 
   // Generate output
   @if not $test {
-    $font_eot: PathReplaceExt($root, ".eot");
-    $font_woff2: PathReplaceExt($root, ".woff2");
-    $font_woff: PathReplaceExt($root, ".woff");
-    $font_ttf: PathReplaceExt($root, ".ttf");
-    $font_svg: PathReplaceExt($root, ".svg");
+    $font_eot: PathReplaceExt($root, "eot");
+    $font_woff2: PathReplaceExt($root, "woff2");
+    $font_woff: PathReplaceExt($root, "woff");
+    $font_ttf: PathReplaceExt($root, "ttf");
+    $font_svg: PathReplaceExt($root, "svg");
     @font-face {
       font-family: '#{$name}';
       src: url('#{$font_eot}');

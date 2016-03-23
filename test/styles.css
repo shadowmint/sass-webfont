@@ -1,2 +1,6 @@
-#foo:after {
-  content: "--Value--"; }
+@font-face {
+  font-family: "NovaSlim";
+  src: url("fonts/NovaSlim.eot");
+  src: url("fonts/NovaSlim.eot?#iefix") format("embedded-opentype"), url("fonts/NovaSlim.woff2") format("woff2"), url("fonts/NovaSlim.woff") format("woff"), url("fonts/NovaSlim.ttf") format("truetype"), url("fonts/NovaSlim.svg#svgFontName") format("svg"); }
+html body {
+  font-family: "NovaSlim"; }

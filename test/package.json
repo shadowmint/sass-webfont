@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "sass-TEMPLATE": "file:///Users/doug/dev/sass-package-template.git"
+    "sass-webfont": ".."
   }
 }
