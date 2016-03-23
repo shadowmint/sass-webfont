@@ -18,8 +18,15 @@ This is a reusable webfont scss package.
 
 If you attempt to use a webfont that is not defined, you'll see an error like:
 
-    WARNING: Invalid attempt to use missing font 'dfault'
+    WARNING: Invalid attempt to use unknown font alias 'dfault'
              on line 46 of node_modules/sass-webfont/src/webfont.scss
+
+Notice that the alias used when using a font shouldn't be the name of the
+font. If you want a simple font-name based call, use a different package.
+
+Font aliases should be meaningful high level names ('default', 'header', etc)
+which are easily remapped to different fonts by updating the `WebFontDefine`
+call.
 
 ## Install
 

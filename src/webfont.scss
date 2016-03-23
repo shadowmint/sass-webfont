@@ -43,7 +43,7 @@ $__webfontState: (
   $rtn: map-get($fonts, $alias);
   @if not $rtn {
     @if not $test {
-      @warn "Invalid attempt to use missing font '#{$alias}'";
+      @warn "Invalid attempt to use unknown font alias '#{$alias}'";
     }
   }
   @return $rtn;
