@@ -1,11 +1,11 @@
 {
-  "name": "sass-TEMPLATE",
+  "name": "sass-webfont",
   "version": "0.0.1",
-  "description": "TEMPLATE",
+  "description": "Webfont helper script",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shadowmint/sass-TEMPLATE.git"
+    "url": "git+https://github.com/shadowmint/sass-webfont.git"
   },
   "files": [
     "index.js",
@@ -15,8 +15,10 @@
   "author": "douglas.linder@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shadowmint/sass-TEMPLATE/issues"
+    "url": "https://github.com/shadowmint/sass-webfont/issues"
   },
-  "homepage": "https://github.com/shadowmint/sass-TEMPLATE",
-  "dependencies": {}
+  "homepage": "https://github.com/shadowmint/sass-webfont",
+  "dependencies": {
+    "sass-core": "github:shadowmint/sass-core#0.0.1"
+  }
 }

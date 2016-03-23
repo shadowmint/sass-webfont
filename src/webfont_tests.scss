@@ -1,0 +1,27 @@
+@import "./webfont.scss";
+@debug TestSuite();
+
+@function test_use_named_font() {
+  $setup: Test(test_use_named_font);
+
+  $output: WebFont("default");
+  $test: Assert($output == "blah");
+
+  $output: WebFont("foo");
+  $test: Assert($output == "foo");
+
+  $output: WebFont("foobar", true);
+  $test: Assert($output == null);
+
+  @return TestEnd();
+}
+
+// Setup
+@include WebFontDefine("default", "blah", "blah/font.ttf", true);
+@include WebFontDefine("foo", "foo", "foo/font.ttf", true);
+
+@debug test_use_named_font();
+@debug TestSuiteEnd();
+
+// Teardown
+$tesT: WebFontClear();
